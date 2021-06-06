@@ -1,0 +1,20 @@
+div.card{
+    padding: 1rem;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+.card-img-top{
+    width: auto;
+    height: 150px;
+    border-radius: 20%;
+    border: solid grey 2px; 
+}
+
+button{
+    background-color: cadetblue !important;
+}
+
+#mensajes{
+    max-height: 300px;
+}
