@@ -20,4 +20,5 @@ urlpatterns = [
     path('', views.index),
     path('process_money', views.money),
     path('reset', views.reset),
+    path('setvictory', views.victory)
 ]

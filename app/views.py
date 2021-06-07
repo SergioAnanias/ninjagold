@@ -1,9 +1,12 @@
 from django.shortcuts import render, redirect
 from random import randint
+from time import gmtime, strftime, localtime
 
 
 
 def index(request):
+    if not 'victory' in request.session or not request.session['victory']:
+        pass
     if not 'gold' in request.session or not request.session['gold']:
         request.session['gold'] = 0
     if not 'message_list' in request.session or not request.session['message_list']:
@@ -13,6 +16,8 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
+def victory(request):
+    pass
 
 def money(request):
     request.session['value'] = request.POST['processmoney']
