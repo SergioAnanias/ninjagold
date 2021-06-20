@@ -24,28 +24,24 @@ def money(request):
 
 
     if request.session['value'] == 'Farm':
-
         numero = randint(10, 20)
         request.session['gold'] += numero
         request.session['message_list'].insert(0,numero)
 
 
     elif request.session['value'] == 'Cave':
-
         numero = randint(5, 10)
         request.session['gold'] += numero
         request.session['message_list'].insert(0,numero)
 
 
     elif request.session['value'] == 'House':
-
         numero = randint(2, 5)
         request.session['gold'] += numero
         request.session['message_list'].insert(0,numero)
 
 
     elif request.session['value'] == 'Casino':
-
         numero = randint(-50, 50)
         request.session['gold'] += numero
         request.session['message_list'].insert(0,numero)
